@@ -1,0 +1,13 @@
+--- POTATO THE PROJECT --- INDEX
+
+
+WELCOME!
+
+Potato é uma biblioteca criada por Daniel Gomes, 17, usando selenium e demais bibliotecas em python
+para a automatização da visualização de preços de commodities em tempo real e com muita facilidade , já que
+sua função é fazer a extração de dados do site; IFC MARKETS e transformar-los em uma planilha no excel por meio da biblioteca 
+Pandas .
+
+--- DANIEL GOMES , CEO DA SMALLZE E CRIADOR DO POTATO THE PROJECT
+
+ 
