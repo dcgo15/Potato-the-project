@@ -1,14 +1,27 @@
-# Importar 
-import requests 
+from selenium import webdriver
 from bs4 import BeautifulSoup
-import pandas as pd
-
-url = "https://www.cnabrasil.org.br/servicos/precos-commodites"
-resposta = requests.get(url)
-
-conteudo = resposta.content
-
-conteudo_site = BeautifulSoup(conteudo , "html.parser")
-commodities = conteudo_site.findAll("table", attrs = {"class": "td-nome_produto"})
+from time import sleep
 
 
+browser = webdriver.Chrome()
+
+browser.get("https://www.ifcmarkets.com.br/trading/commodities")
+sleep(5)
+
+site = BeautifulSoup(browser.page_source, "html.parser")
+print(site.prettify())
+
+
+
+
+
+#Parte do Codigo html do site IFC markets
+
+'''
+<td class="name">
+    <a href="/trading-conditions/commodities/copper">
+      #C-COPPER
+    </a>
+</td>
+
+'''
