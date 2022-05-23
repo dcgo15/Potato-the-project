@@ -1,7 +1,3 @@
-# Criar futuramente uma IA que faça previsoes de preços
-# Transformar em uma biblioteca
-#adicionar mais produtos
-
 #Ethanol: 4.666
 #NG: 69,52
 #brentoil: 12832
@@ -18,6 +14,12 @@
 #cpo: 14341198
 #rubber: 298,474
 
+
+
+# Criar futuramente uma IA que faça previsoes de preços
+# Transformar em uma biblioteca
+#adicionar mais produtos
+
 from datetime import datetime
 import pandas as pd
 import requests
@@ -32,8 +34,18 @@ preços = resposta.json()
 #Preços
 
 preço_dolar = preços["data"]["rates"]["BRL"]
-preço_café = preços["data"]["rates"]["COFFEE"] * 10
-preço_petroleo = preços["data"]["rates"]["BRENTOIL"] * 10000
+preço_café = preços["data"]["rates"]["COFFEE"] * 4.6656
+preço_petroleo = preços["data"]["rates"]["BRENTOIL"] * 12832
+tr = preços["data"]["rates"]["WHEAT"] * 180033
+alg = preços["data"]["rates"]["COTTON"] * 2.045
+açucar = preços["data"]["rates"]["SUGAR"] * 0.0399
+arroz = preços["data"]["rates"]["RICE"] * 299.65
+eth = preços["data"]["rates"]["ETHANOL"] * 4.666
+fei = preços["data"]["rates"]["SOYBEAN"] * 287.83
+ng = preços["data"]["rates"]["NG"] * 69.52
+lumber = preços["data"]["rates"]["LUMBER"] * 441.880
+rubb = preços["data"]["rates"]["RUBBER"] * 298.474
+corn = preços["data"]["rates"]["CORN"] * 61.730
 
 #
 '''
@@ -57,6 +69,16 @@ tabela = pd.read_excel("lista_preços2.xlsx")
 tabela.loc[0, "PREÇO"] = float(preço_dolar)
 tabela.loc[1, "PREÇO"] = float(preço_café)
 tabela.loc[2, "PREÇO"] = float(preço_petroleo)
+tabela.loc[3, "PREÇO"] = float(tr)
+tabela.loc[4, "PREÇO"] = float(alg)
+tabela.loc[5, "PREÇO"] = float(açucar)
+tabela.loc[6, "PREÇO"] = float(arroz)
+tabela.loc[7, "PREÇO"] = float(eth)
+tabela.loc[8, "PREÇO"] = float(fei)
+tabela.loc[9, "PREÇO"] = float(ng)
+tabela.loc[10, "PREÇO"] = float(lumber)
+tabela.loc[11, "PREÇO"] = float(rubb)
+tabela.loc[12, "PREÇO"] = float(corn)
 
 tabela.loc[0, "DATA ATUAL"] = datetime.now()
 tabela.to_excel("lista_preços2.xlsx",index=False)
