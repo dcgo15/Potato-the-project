@@ -2,6 +2,22 @@
 # Transformar em uma biblioteca
 #adicionar mais produtos
 
+#Ethanol: 4.666
+#NG: 69,52
+#brentoil: 12832
+#wtioil: 12139
+#wheat: 180033
+#cotton: 2,045
+#coffee: 4,6656
+#lumber:  441880
+#corn: 61,1370
+#rice: 299,6545
+#soybean: 287,83
+#sugar: 0,0399
+#ethanol: 4,666
+#cpo: 14341198
+#rubber: 298,474
+
 from datetime import datetime
 import pandas as pd
 import requests
