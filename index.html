@@ -3,13 +3,14 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<title>Potato The Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-white">
   <div class="container-fluid">
-   <nav class="navbar bg-light">
+   <nav class="navbar bg-white">
    <div class="container">
-     <a class="navbar-brand" href="#">
+     <a class="navbar-brand" href="index.html">
       <img src="logo.jpg" alt="" width="100" height="40">
      </a>
      </div>
@@ -20,19 +21,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Downloads</a>
+          <a class="nav-link" aria-current="page" href="downloads.html">Downloads</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Doações</a>
+          <a class="nav-link" href="donate.html">Doações</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Sobre</a>
+          <a class="nav-link" href="sobre.html">About</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-      </form>
     </div>
   </div>
 </nav>
@@ -41,7 +38,7 @@
 <h2>Inicio</h2>
 <p>Potato é uma biblioteca criada por Daniel Gomes, usando selenium e demais bibliotecas em python
 para a automatização da visualização de preços de commodities em tempo real e com muita facilidade , já que
-sua função é fazer um retorno de dados do site; IFC MARKETS e transformar-los em uma planilha no excel por meio da biblioteca
+sua função é fazer um retorno de dados e transformar-los em uma planilha no excel por meio da biblioteca
 Pandas.
 
 --- DANIEL GOMES , CEO DA SMALLZE E CRIADOR DO POTATO THE PROJECT</p>
@@ -57,17 +54,76 @@ Este documento abrange a versão 1.0.1 do Potato. Os exemplos nesta documentaç�
 	<li>Começo</li>
 	<li>Tipos de Objeto</li>
 	<li>Codificando</li>
-	<li><a href="#">Ajuda</a></li>
+	<li><a href="mailto:danielcerqueira2346@gmail.com">Ajuda</a></li>
 </ul>
 
 <h4>Instalando:</h4>
-<p></p>
-<h4>Começo</h4>
-<p></p>
-<h4>Tipos de Objeto</h4>
-<p></p>
-<h4>Codificando</h4>
-<p></p>
+<p>O Potato pode ser facilmente instalado dentro de seu ambiente virtual usando o pip.</p>
+<p>Na linha de comando, assegure-se que seu ambiente virtual esteja ativo, e execute o seguinte comando:</p>
+<div class="highlight-default notranslate">
+	<div class="highlight">
+		<pre>
+			<span></span>
+			<span class="n">pip install thepotato</span>
+		</pre>
+	</div>
+</div>
+<p>Isso irá baixar e instalar a última versão do Django.</p>
+<p>Depois que a instalação for concluída, você pode verificar sua instalação do Potato executando Potato-admin --version na linha de comando.</p>
+<h4>Começo:</h4>
+<p>Antes de qualquer coisa , devemos esclarecer que a biblioteca potato cria uma planilha do excel automaticamente quando você chama qualquer variavel independentemente de qualquer que seja .  </p>
+<h4>Tipos de Objeto:</h4>
+<p>Esses são os objetos que você deverá saber para chamar e ver o preço de determinado produto desejado </p>
+<ul>
+  <li>Coffee</li>
+<li>Petroleo</li>
+<li>tr - trigo</li>
+<li>alg - Algodão</li>
+<li>açucar</li>
+<li>arroz</li>
+<li>eth - Etanol</li>
+<li>fei - Feijão</li>
+<li>ng - Gas Natural</li>
+<li>lumber - Madeira</li>
+<li>rubb - Borracha</li>
+<li>Corn - Milho</li>
+</ul>
+<h4>Codificando:</h4>
+<p>Depois de baixado , você deve importar o modulo: Potato .</p>
+<div class="highlight-default notranslate">
+  <div class="highlight">
+    <pre>
+      <span></span>
+      <span class="n">import Potato</span>
+    </pre>
+  </div>
+</div>
 
+<p>Agora você deve chamar algum produto desejado para obter o preço</p>
+<div class="highlight-default notranslate">
+  <div class="highlight">
+    <pre>
+      <span></span>
+      <code data-lang="python">print(Potato.tr)</code>
+    </pre>
+  </div>
+</div>
+<p>****CONSULTE OS OBJETOS ACIMA PARA SABER QUAIS OBJETOS CHAMAR****</p>
+
+<!-- FOOTER -->
+<footer class="text-center">
+	<div class="container2 pt-4">
+    <!-- Section: Social media -->
+      <a href="#"><i class="bi bi-google"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-github"></i></a>
+    </div>
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+    © 2022 Copyright:
+    <a class="text-dark" href="index.html">Potato the project org</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </body>
 </html>
