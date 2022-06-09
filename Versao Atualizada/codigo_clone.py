@@ -23,8 +23,6 @@ class Commodities:
     def cafe(self):
         self.cafe = "café"
         print("O nome da Commoditie é:", self.cafe)
-
-    def preço_café(self):
         print("O preço é: ", café)
 
     def hora(self):
@@ -33,10 +31,9 @@ class Commodities:
 
 #VARIAVEL DE NOME E PREÇO
         
-commo = Commodities()
+commoditie = Commodities()
 
-commo.cafe()
-commo.preço_café()
-commo.hora()
+commoditie.cafe()
+commoditie.hora()
  
 
