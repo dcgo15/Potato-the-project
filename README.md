@@ -21,3 +21,37 @@ On the command line, make sure your virtual environment is active, and run the f
 
 pip install thepotato
 ```
+This will download and install the latest version of Django.
+
+Once the installation is complete, you can verify your Potato installation by running Potato-admin --version from the command line.
+
+# Start:  
+First of all , we should clarify that the potato library creates an excel sheet automatically when you call any variable regardless of what it is .
+
+# Object Types:  
+These are the objects that you will need to know to call and see the price of a certain desired product.
+
+- coffee  
+- Petroleum  
+- tr - wheat  
+- alg - cotton  
+- sugar  
+- rice  
+- eth - Ethanol  
+- fei - beans  
+- ng - Natural Gas  
+- lumber - wood  
+- rubb - rubber  
+- Corn - Corn
+
+# Encoding:
+Once downloaded, you must import the module: thepotato .
+```
+
+import thepotato
+```
+Now you must call some desired product to get the price:
+```
+print(thepotato.tr)
+```
+***Remembering that all this code can change, since it suffers from updates
