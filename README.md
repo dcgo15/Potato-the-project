@@ -12,3 +12,8 @@ These instructions illustrate all of Potato's main features, with examples. I sh
 - Object Types  
 - Encoding  
 - Help  
+
+# Installing:  
+Potato can be easily installed within your virtual environment using pip.
+
+On the command line, make sure your virtual environment is active, and run the following command:
