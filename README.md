@@ -18,5 +18,6 @@ Potato can be easily installed within your virtual environment using pip.
 
 On the command line, make sure your virtual environment is active, and run the following command:
 '''
+
 pip install thepotato
 '''
