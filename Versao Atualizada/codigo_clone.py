@@ -13,6 +13,7 @@ link = "https://www.commodities-api.com/api/latest?access_key=9rzk9chud8q29qw9b6
 resposta = requests.get(link)
 preco = resposta.json()
 
+preço_dolar = preco["data"]["rates"]["BRL"]
 café = preco["data"]["rates"]["COFFEE"] * 4.6656
 petroleo = preco["data"]["rates"]["BRENTOIL"] * 12832
 trigo = preco["data"]["rates"]["WHEAT"] * 180033
@@ -26,6 +27,39 @@ madeira =preco["data"]["rates"]["LUMBER"] * 441.880
 borracha = preco["data"]["rates"]["RUBBER"] * 298.474
 milho = preco["data"]["rates"]["CORN"] * 61.730
 
+while True:
+    quest = input("Você deseja uma planilha com os preços?[Y / N]:").upper()
+
+    if quest == "Y":
+        tabela = pd.read_excel("lista_preços2.xlsx")
+        
+        tabela.loc[0, "PREÇO"] = float(preço_dolar)
+        tabela.loc[1, "PREÇO"] = float(café)
+        tabela.loc[2, "PREÇO"] = float(petroleo)
+        tabela.loc[3, "PREÇO"] = float(trigo)
+        tabela.loc[4, "PREÇO"] = float(algodao)
+        tabela.loc[5, "PREÇO"] = float(açucar)
+        tabela.loc[6, "PREÇO"] = float(arroz)
+        tabela.loc[7, "PREÇO"] = float(ethanol)
+        tabela.loc[8, "PREÇO"] = float(feijao)
+        tabela.loc[9, "PREÇO"] = float(ng)
+        tabela.loc[10, "PREÇO"] = float(madeira)
+        tabela.loc[11, "PREÇO"] = float(borracha)
+        tabela.loc[12, "PREÇO"] = float(milho)
+
+        tabela.loc[0, "DATA ATUAL"] = datetime.now()
+        tabela.to_excel("lista_preços2.xlsx", index=False)
+
+        break
+        
+    elif quest == "N":
+        print("Ok, não incomodaremos novamente : )")
+        break
+    else:
+        print("Não entendi : (")
+        break
+
+    
 #CLASS
 class Thepotato:
     def __init__(self):
@@ -172,11 +206,13 @@ class Thepotato:
         
 
 #VARIAVEL DE NOME E PREÇO
-        
+
+'''
 commoditie = Thepotato()
+
 
 commoditie.cafe()
 commoditie.açu()
 commoditie.hora()
 
-
+'''
