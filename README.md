@@ -57,5 +57,5 @@ commodities = thepotato.Thepotato()
 commodities.cafe()
 commodities.hora() #If you want to see the updated time
 ```
-***Remembering that all this code can change, since it suffers from updates
+***Remembering that all this code can change, since it suffers from updates  
 ***You need to download this .xlsx file if you want to have a complete spreadsheet : )
