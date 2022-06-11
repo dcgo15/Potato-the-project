@@ -31,18 +31,18 @@ First of all , we should clarify that the potato library creates an excel sheet 
 # Object Types:  
 These are the objects that you will need to know to call and see the price of a certain desired product.
 
-- coffee  
-- Petroleum  
-- tr - wheat  
+- cafe - coffee  
+- petroleo - Petroleum  
+- tri - wheat  
 - alg - cotton  
-- sugar  
-- rice  
+- açu - sugar  
+- arro - rice  
 - eth - Ethanol  
 - fei - beans  
-- ng - Natural Gas  
-- lumber - wood  
-- rubb - rubber  
-- Corn - Corn
+- nat - Natural Gas  
+- mad - wood  
+- bor - rubber  
+- mil - Corn
 
 # Encoding:
 Once downloaded, you must import the module: thepotato .
@@ -52,6 +52,10 @@ import thepotato
 ```
 Now you must call some desired product to get the price:
 ```
-print(thepotato.tr)
+commodities = thepotato.Thepotato()
+
+commodities.cafe()
+commodities.hora() #If you want to see the updated time
 ```
 ***Remembering that all this code can change, since it suffers from updates
+***You need to download this .xlsx file if you want to have a complete spreadsheet : )
