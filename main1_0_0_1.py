@@ -86,3 +86,100 @@ tabela.to_excel("lista_preços2.xlsx",index=False)
 print(f"---POTATO THE PROJECT---\n***Uma Biblioteca para voce saber o preço real de sua commoditie ppreferida***")
 print("Preços atualizados:", datetime.now())
 print("Previsões futuras: ...(Em Breve)")
+
+
+#VOU CRIAR UMA CLASS
+#dolar
+print("----COMMODITIES HOJE----","\nConfira os preços aqui:")
+nome =print("Dolar:", preço_dolar)
+if preço_dolar < preço_dolar * 0.9:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#cafe
+nome =print("Café: ",preço_café)
+if preço_café < preço_café * 0.9:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#petr
+nome =print("Petroleo: ",preço_petroleo)
+if preço_petroleo < preço_petroleo * 0.9:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#tri
+nome =print("Trigo: ",tr)
+if tr < tr * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#alg
+nome =print("Algodao", alg)
+if alg < alg * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#acucar
+nome =print("Açucar:", açucar)
+if açucar < açucar * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#arroz
+nome =print("Arroz:",arroz)
+if arroz < arroz * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+
+#eth
+nome =print("Etanol: ",eth)
+if eth < eth * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#feijao
+nome =print("Feijao:",fei)
+if fei < fei * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#ng
+nome =print("Gas Natural: ",ng)
+if ng < ng * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#lumber
+nome =print("Madeira: ",lumber)
+if lumber < lumber * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#rubb
+nome =print("Borracha:",rubb)
+if rubb < rubb * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+#corn
+nome = print("Milho:",corn)
+if corn < corn * 0.90:
+    print("Recomendado: Compra")
+else:
+    print("Recomendado: Venda")
+
+
