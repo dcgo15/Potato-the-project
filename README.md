@@ -58,4 +58,6 @@ commodities.cafe()
 commodities.hora() #If you want to see the updated time
 ```
 ***Remembering that all this code can change, since it suffers from updates  
-***You need to download this .xlsx file if you want to have a complete spreadsheet : )
+***You need to download this .xlsx file if you want to have a complete spreadsheet : )  
+
+[lista_preços2.xlsx](https://github.com/dcgo15/Potato-the-project/files/8885809/lista_precos2.xlsx)
