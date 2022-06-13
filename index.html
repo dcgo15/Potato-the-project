@@ -24,7 +24,7 @@
           <a class="nav-link" aria-current="page" href="downloads.html">Downloads</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="donate.html">Doações</a>
+          <a class="nav-link" href="doar.html">Doações</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="sobre.html">About</a>
@@ -33,33 +33,26 @@
     </div>
   </div>
 </nav>
-<h1>Seja Bem-Vindo!</h1>
+<h1>Welcome!</h1>
 <img src="logo.jpg" class="img-fluid" alt="...">
-<h2>Inicio</h2>
-<p>Potato é uma biblioteca criada por Daniel Gomes, usando selenium e demais bibliotecas em python
-para a automatização da visualização de preços de commodities em tempo real e com muita facilidade , já que
-sua função é fazer um retorno de dados e transformar-los em uma planilha no excel por meio da biblioteca
-Pandas.
+<h2>Start</h2>
+<p>Potato the project or thepotato is a Python library that extracts commodity values ​​(information) from a json file and transforms them into an Excel file or to be used even in cmd/shell itself.</p>
 
---- DANIEL GOMES , CEO DA SMALLZE E CRIADOR DO POTATO THE PROJECT</p>
+<h2>User's Guide</h2>
+<p>These instructions illustrate all of Potato's main features, with examples. I show you what the library is for, how it works, how to use it, how to make it do what you want it to do. This document covers version 1.0.1 of Potato. The examples in this documentation should work the same in Python 2.7 and Python 3</p>
 
-<h2>Guia do usuario</h2>
-<p>Estas instruções ilustram todos os principais recursos do Potato, com exemplos. Eu mostro a você para que serve a biblioteca, como ela funciona, como usá-la, como fazer com que ela faça o que você quer e o que fazer quando ela viola suas expectativas.
-
-Este documento abrange a versão 1.0.1 do Potato. Os exemplos nesta documentação devem funcionar da mesma maneira no Python 2.7 e no Python 3.2.</p>
-
-<h2>Indice</h2>
+<h2>Index</h2>
 <ul>
-	<li>Instalando</li>
-	<li>Começo</li>
-	<li>Tipos de Objeto</li>
-	<li>Codificando</li>
-	<li><a href="mailto:danielcerqueira2346@gmail.com">Ajuda</a></li>
+	<li>Installing</li>
+	<li>Start</li>
+	<li>Object Types</li>
+	<li>Encoding</li>
+	<li><a href="mailto:danielcerqueira2346@gmail.com">Help</a></li>
 </ul>
 
-<h4>Instalando:</h4>
-<p>O Potato pode ser facilmente instalado dentro de seu ambiente virtual usando o pip.</p>
-<p>Na linha de comando, assegure-se que seu ambiente virtual esteja ativo, e execute o seguinte comando:</p>
+<h4>Installing:</h4>
+<p>Potato can be easily installed within your virtual environment using pip.</p>
+<p>On the command line, make sure your virtual environment is active, and run the following command:</p>
 <div class="highlight-default notranslate">
 	<div class="highlight">
 		<pre>
@@ -68,14 +61,14 @@ Este documento abrange a versão 1.0.1 do Potato. Os exemplos nesta documentaç�
 		</pre>
 	</div>
 </div>
-<p>Isso irá baixar e instalar a última versão do Django.</p>
-<p>Depois que a instalação for concluída, você pode verificar sua instalação do Potato executando Potato-admin --version na linha de comando.</p>
-<h4>Começo:</h4>
-<p>Antes de qualquer coisa , devemos esclarecer que a biblioteca potato cria uma planilha do excel automaticamente quando você chama qualquer variavel independentemente de qualquer que seja .  </p>
-<h4>Tipos de Objeto:</h4>
-<p>Esses são os objetos que você deverá saber para chamar e ver o preço de determinado produto desejado </p>
+<p>This will download and install the latest version of thepotato.</p>
+<p>Once the installation is complete, you can verify your Potato installation by running Potato-admin --version from the command line.</p>
+<h4>Start:</h4>
+<p>First of all , we should clarify that the potato library creates an excel sheet automatically when you call any variable regardless of what it is .  </p>
+<h4>Object Types:</h4>
+<p>These are the objects that you will need to know to call and see the price of a certain desired product.</p>
 <ul>
-  <li>Coffee</li>
+<li>Coffee</li>
 <li>Petroleo</li>
 <li>tr - trigo</li>
 <li>alg - Algodão</li>
@@ -88,30 +81,29 @@ Este documento abrange a versão 1.0.1 do Potato. Os exemplos nesta documentaç�
 <li>rubb - Borracha</li>
 <li>Corn - Milho</li>
 </ul>
-<h4>Codificando:</h4>
-<p>Depois de baixado , você deve importar o modulo: Potato .</p>
+<h4>Encoding:</h4>
+<p>Once downloaded, you must import the module: thepotato .</p>
 <div class="highlight-default notranslate">
   <div class="highlight">
     <pre>
       <span></span>
-      <span class="n">import thepotato</span>
+      <span class="n">import Potato</span>
     </pre>
   </div>
 </div>
 
-<p>Agora você deve chamar algum produto desejado para obter o preço</p>
+<p>Now you must call some desired product to get the price:</p>
 <div class="highlight-default notranslate">
   <div class="highlight">
     <pre>
       <span></span>
-      <code data-lang="python">print(thepotato.tr)</code>
+      <code data-lang="python">commodities = thepotato.Thepotato()</code>
+      <code data-lang="python">commodities.cafe()</code>
+      <code data-lang="python">commodities.hora() #If you want to see the updated time</code>
     </pre>
   </div>
 </div>
-<p>****CONSULTE OS OBJETOS ACIMA PARA SABER QUAIS OBJETOS CHAMAR****</p>
-<a href="downloads.html">Downloads</a>
-<a href="donates.html">Donates</a>
-<a href="sobre.html">About</a>
+<p>***Remembering that all this code can change, since it suffers from updates</p>
 
 <!-- FOOTER -->
 <footer class="text-center">
