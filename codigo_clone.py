@@ -27,6 +27,15 @@ madeira =preco["data"]["rates"]["LUMBER"] * 441.880
 borracha = preco["data"]["rates"]["RUBBER"] * 298.474
 milho = preco["data"]["rates"]["CORN"] * 61.730
 
+#NOVOS COMMODITIES
+
+alu = preco["data"]["rates"]["ALU"] * 195.2406
+ni = preco["data"]["rates"]["NI"] * 6469.3927
+znc = preco["data"]["rates"]["ZNC"] * 12817758.6824
+tin = preco["data"]["rates"]["TIN"] * 12755.9461
+cacau = preco["data"]["rates"]["COCOA"] * 5836185.8190
+
+
 while True:
     quest = input("Você deseja uma planilha com os preços?[Y / N]:").upper()
 
@@ -46,6 +55,11 @@ while True:
         tabela.loc[10, "PREÇO"] = float(madeira)
         tabela.loc[11, "PREÇO"] = float(borracha)
         tabela.loc[12, "PREÇO"] = float(milho)
+        tabela.loc[13, "PREÇO"] = float(alu)
+        tabela.loc[14, "PREÇO"] = float(ni)
+        tabela.loc[15, "PREÇO"] = float(znc)
+        tabela.loc[16, "PREÇO"] = float(tin)
+        tabela.loc[17, "PREÇO"] = float(cacau)
 
         tabela.loc[0, "DATA ATUAL"] = datetime.now()
         tabela.to_excel("lista_preços2.xlsx", index=False)
@@ -57,7 +71,6 @@ while True:
         break
     else:
         print("Não entendi : (")
-        break
 
     
 #CLASS
@@ -71,7 +84,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.cafe)
         print("O preço é: ", café)
 
-        if café < café * 0.97:
+        if café <= café * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -82,7 +95,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.petroleo)
         print("O preço é: ", petroleo)
 
-        if petroleo < petroleo * 0.97:
+        if petroleo <= petroleo * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -93,7 +106,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.tri)
         print("O preço é: ", trigo)
         
-        if trigo < trigo * 0.97:
+        if trigo <= trigo * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -105,7 +118,7 @@ class Thepotato:
         print("O preço é: ", algodao)
 
         
-        if algodao < algodao * 0.97:
+        if algodao <= algodao * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -116,7 +129,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.açu)
         print("O preço é: ", açucar)
         
-        if açucar < açucar * 0.97:
+        if açucar <= açucar * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -127,7 +140,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.arro)
         print("O preço é: ", arroz)
         
-        if arroz < arroz * 0.97:
+        if arroz <= arroz * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -138,7 +151,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.eth)
         print("O preço é: ", ethanol)
         
-        if ethanol < ethanol * 0.97:
+        if ethanol <= ethanol * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -149,7 +162,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.fei)
         print("O preço é: ", feijao)
         
-        if feijao < feijao * 0.97:
+        if feijao <= feijao * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -160,7 +173,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.nat)
         print("O preço é: ", ng)
         
-        if ng < ng * 0.97:
+        if ng <= ng * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -171,7 +184,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.mad)
         print("O preço é: ", madeira)
         
-        if madeira < madeira * 0.97:
+        if madeira <= madeira * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -182,7 +195,7 @@ class Thepotato:
         print("O nome da Commoditie é:", self.bor)
         print("O preço é: ", borracha)
         
-        if borracha < borracha * 0.97:
+        if borracha <= borracha * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
@@ -193,7 +206,62 @@ class Thepotato:
         print("O nome da Commoditie é:", self.mil)
         print("O preço é: ", milho)
         
-        if milho < milho * 0.97:
+        if milho <= milho * 0.99:
+            print("Recomendação: Compra")
+        else:
+            print("Recomendação: Venda")
+        print("-------------------")
+
+    def alum(self):
+        self.alu = "Aluminio"
+        print("O nome da Commoditie é:", self.alu)
+        print("O preço é: ", alu)
+        
+        if alu <= alu * 0.99:
+            print("Recomendação: Compra")
+        else:
+            print("Recomendação: Venda")
+        print("-------------------")
+
+    def niq(self):
+        self.ni = "Niquel"
+        print("O nome da Commoditie é:", self.ni)
+        print("O preço é: ", ni)
+        
+        if ni <= ni * 0.99:
+            print("Recomendação: Compra")
+        else:
+            print("Recomendação: Venda")
+        print("-------------------")
+
+    def znco(self):
+        self.znc = "Zinco"
+        print("O nome da Commoditie é:", self.znc)
+        print("O preço é: ", znc)
+        
+        if znc <= znc * 0.99:
+            print("Recomendação: Compra")
+        else:
+            print("Recomendação: Venda")
+        print("-------------------")
+
+    def tint(self):
+        self.tin = "Titanio"
+        print("O nome da Commoditie é:", self.tin)
+        print("O preço é: ", tin)
+        
+        if tin <= tin * 0.99:
+            print("Recomendação: Compra")
+        else:
+            print("Recomendação: Venda")
+        print("-------------------")
+
+    def cac(self):
+        self.caca = "Cacau"
+        print("O nome da Commoditie é:", self.caca)
+        print("O preço é: ", cacau)
+        
+        if cacau <= cacau * 0.99:
             print("Recomendação: Compra")
         else:
             print("Recomendação: Venda")
