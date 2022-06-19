@@ -43,6 +43,11 @@ These are the objects that you will need to know to call and see the price of a 
 - mad - wood  
 - bor - rubber  
 - mil - Corn
+- alu - aluminium
+- ni - nickel
+- znc - zinc
+- tin - titanium
+- cacau - cocoa
 
 # Encoding:
 Once downloaded, you must import the module: thepotato .
