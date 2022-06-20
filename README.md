@@ -23,7 +23,7 @@ pip install thepotato
 ```
 This will download and install the latest version of thepotato.
 
-Once the installation is complete, you can verify your Potato installation by running Potato-admin --version from the command line.
+Once the installation is complete, you can verify your Potato installation by running thepotato-admin --version from the command line.
 
 # Start:  
 First of all , we should clarify that the potato library creates an excel sheet automatically when you call any variable regardless of what it is .
