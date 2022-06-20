@@ -21,7 +21,7 @@ On the command line, make sure your virtual environment is active, and run the f
 
 pip install thepotato
 ```
-This will download and install the latest version of Django.
+This will download and install the latest version of thepotato.
 
 Once the installation is complete, you can verify your Potato installation by running Potato-admin --version from the command line.
 
