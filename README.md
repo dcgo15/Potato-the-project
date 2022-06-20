@@ -67,4 +67,4 @@ commodities.hora() #If you want to see the updated time
 
 [lista_preços2.xlsx](https://github.com/dcgo15/Potato-the-project/files/8885809/lista_precos2.xlsx)
 
-***The website will be discontinued soon***
+***The website has been discontinued***
